@@ -1,5 +1,10 @@
+const $header  = $('header');
+const $body    = $('body');
+const $blur    = $('main, footer');
+const $button  = $('body > div > div');
+
 $(document).ready(function(){
-	$('main').fadeIn(3000);
+	$blur.fadeIn(3000);
 })
 
 var pixelDelay;
@@ -21,7 +26,6 @@ function handleMediaQueryChange(event) {
   } else {
       pixelDelay = 40;  
   }
-      console.log(pixelDelay);
 }
 
 const mediaQuery = window.matchMedia('(max-width: 768px)');
@@ -33,9 +37,6 @@ handleMediaQueryChange(mediaQuery);
 
 let nav_bar = false;
 
-const $header  = $('header');
-const $body    = $('body');
-const $button  = $('body > div > div');
 
 $button.click(function() {
   nav_bar ? hideBar() : showBar();
@@ -44,11 +45,13 @@ $button.click(function() {
 function hideBar() {
   $header.css('right', '100vw');
   $body.css('overflow-y', 'visible');
+  $blur.css('filter','blur(0px)');
   nav_bar = !nav_bar;
 }
 
 function showBar() {
   $header.css('right', '0');
   $body.css('overflow-y', 'hidden');
+  $blur.css('filter','blur(8px)');
   nav_bar = !nav_bar;
 }

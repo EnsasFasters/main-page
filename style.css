@@ -21,7 +21,6 @@ html {
    font-family: 'Genos', sans-serif;
    font-weight: bold;
    user-select: none;
-
   }
 
 /*******Header********/
@@ -31,9 +30,9 @@ html {
    	display: flex;
       border: 1px solid black;
       background-color: var(--beach);
-      position: sticky;
       top: 0;
       z-index: 4;
+      position: sticky;
    }
    header > p, footer > div > p:nth-child(2){
       margin: auto 15px;
@@ -318,15 +317,17 @@ main {
        background: var(--beach);
        height: 70px;
        border-bottom: 2px solid var(--deeper);
+       position: sticky;
+       z-index: 6;
    }
    header{
       flex-direction: column;
       justify-content: flex-start;
-      height: 100vh;
-      position: absolute;
-      background-image: linear-gradient(100deg, var(--beach),var(--deeper));
-      right: 100vw;
+      height: calc(100vh - 70px);
+      background-color: rgba(0,0,0,0.7);
       transition: right .2s;
+      top: 70px;
+      position: fixed;
    }
    header > img {
        position: absolute;
@@ -343,6 +344,7 @@ main {
       background-color: var(--beach);
       border: 1px solid black;
       position: relative;
+      border-radius: 10px;
       top: 100px;
    }
 
