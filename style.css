@@ -328,6 +328,7 @@ main {
       transition: right .2s;
       top: 70px;
       position: fixed;
+      right:100vw;
    }
    header > img {
        position: absolute;
