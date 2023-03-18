@@ -4,31 +4,42 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-	 <link rel="icon" type="image/x-icon" href="logo1.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Genos&family=Oswald:wght@500&family=Roboto:ital,wght@1,500&family=Rubik+Iso&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+	<link rel="icon" type="image/x-icon" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Genos&family=Oswald:wght@500&family=Roboto:ital,wght@1,500&family=Rubik+Iso&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="jquery.js"></script>
 	<title>bienvenue au Student Book, une éducation d'un autre goût</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
+	<div id="phone-nav-bar-fix">
+		<img src="logo.png" height="60px">
+	<div id="phone-button-fix"><i class="bi bi-menu-button-wide"></i></div>
+	</div>
 	<header>
-		<img src="logo1.png">
-		<p><i class="bi bi-house-door"></i>&nbsp;Accueil      </p>
-		<p><i class="bi bi-binoculars"></i>&nbsp;A propos     </p>
-		<p><i class="bi bi-people"></i>&nbsp;Club       </p>
-		<p><i class="bi bi-person-plus"></i>&nbsp;s'inscrire   </p>
+		<img src="logo.png">
+		  <p><a href="#_1" onclick="scrollToElement('_1');return false;">
+		  	<i class="bi bi-house-door"></i>
+		  &nbsp;Accueil    </a>
+		  </p>
+
+		  <p><a href="#_2" onclick="scrollToElement('_2');return false;">
+		  	<i class="bi bi-binoculars"></i>
+		  &nbsp;À propos   </a>
+		  </p>
+
+		  <p><a href="#_3" onclick="scrollToElement('_3');return false;">
+		  	<i class="bi bi-people"></i>&nbsp;Club           </a>
+		  </p>
+
+		  <p><a href=""><i class="bi bi-person-plus"></i>&nbsp;s'inscrire</a></p>
 	</header>
    <br><br>
-   <main>
-   	  <div>
-   	  	<p class="underline-effect">Student&nbsp;Book</p>
+   <main >
+   	  <div id="_1">
+   	  	<p>Student Book</p>
    	  	<p class="push-up-text">une éducation d'un autre goût</p>	
 
    	  	<p>
@@ -42,19 +53,47 @@
    	  </div>
    	  <!--------------------------->
    	  <br>
-   	  <div>
-   	  	<p class="underline-effect">A propos</p>
-   	  	<p class="push-up-text">Bonjour à tous les étudiants ! Nous sommes heureux de vous accueillir sur notre site web dédié à l'aide pour vos études scientifiques. Vous y trouverez des ressources pour améliorer vos connaissances et compétences en sciences.</i></p>
+   	  <div id="_2">
+   	  	<p>À propos</p>
+   	  	<div class="push-up-text">
+   	  		<p>Bonjour à tous les étudiants ! Nous sommes heureux de vous accueillir sur notre site web dédié à l'aide pour vos études scientifiques. Vous y trouverez des ressources pour améliorer vos connaissances et compétences.</p>
+   	  		<p class="img-phone-center"><img src="joix.png" style="width: 200px;"></p>
+   	  	</div>
    	  </div>
    	  	<!--------------------------->
    	  <br>
-   	  <div>
-   	  	<p class="underline-effect">Club</p>
-   	  	<p class="push-up-text">Si vous créez un compte sur notre site web, vous rejoindrez une communauté d'étudiants passionnés qui sont prêts à s'entraider. Nous sommes heureux de pouvoir offrir une aide précieuse à tous les membres de notre communauté. Rejoignez-nous dès maintenant pour profiter de tous les avantages que notre communauté a à offrir !</i></p>
+   	  <div id="_3">
+   	  	<p>Club</p>
+   	  	<div class="push-up-text">
+   	  		<p class="img-phone-center"><img src="logo.png" style="width: 200px;"></p>
+   	  		<p>Si vous créez un compte sur notre site web, vous rejoindrez une communauté d'étudiants passionnés qui sont prêts à s'entraider. Nous sommes heureux de pouvoir offrir une aide précieuse à tous les membres de notre communauté. Rejoignez-nous dès maintenant pour profiter de tous les avantages que notre communauté a à offrir !</p>
+   	  	</div>
    	  </div>
    	</main>
-    <footer>
-    	
-    </footer>
+   	<br>
+   	    <div id="balls-container">
+    	<div class="balls"></div>
+    	<div class="balls"></div>
+    	<div class="balls"></div>
+    	</div>   
+     <footer>
+    	<div>      
+
+                    
+                   <p>Merci de votre visite!</p>
+                   <p> 
+                	Si vous souhaitez nous faire part de vos suggestions, des options que vous souhaitez ajouter, des fichiers que vous souhaitez mettre à jour, dire merci, poser une question ou toute autre chose pour laquelle vous pensez que nous pouvons vous aider, il vous suffit de:
+                   </p><br>
+                   <p><kbd><a href="telecom.pdf" target="_blank" style="text-decoration: none;">Envoyez un message </a></kbd>
+                   </p>
+
+        </div>
+    	<div>                         <!--style tmp--------->
+    		<p onclick="scrollToElement('_1');return false;"><i class="bi bi-arrow-up-circle" ></i></p>
+    		<p>Développer par <a href="#" style="text-decoration:none;color: var(--fire);text-shadow: 0 0 5px black"> <strong>>-Team</strong></a></p>
+
+    	</div>
+   </footer>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
