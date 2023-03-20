@@ -1,7 +1,7 @@
 const $header  = $('header');
 const $body    = $('body');
 const $blur    = $('main, footer');
-const $button  = $('body > div > div');
+const $button  = $('div#phone-button-fix');
 
 $(document).ready(function(){
 	$blur.fadeIn(3000);

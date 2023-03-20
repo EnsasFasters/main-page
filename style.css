@@ -328,7 +328,7 @@ main {
       transition: right .2s;
       top: 70px;
       position: fixed;
-      right:100vw;
+      right: 100vw;
    }
    header > img {
        position: absolute;
@@ -361,6 +361,7 @@ main {
    }
    footer > div:nth-child(1){
    width:calc( 100vw - 110px);
+   z-index: 5;
    }
    
 }
